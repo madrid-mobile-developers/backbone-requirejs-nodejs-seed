@@ -1,0 +1,13 @@
+{
+    "name": "project-blank-version",
+    "version": "0.0.0",
+    "dependencies": {
+        "backbone-amd": "~1.1.0",
+        "underscore-amd": "~1.5.2",
+        "requirejs": "~2.1.8",
+        "requirejs-text": "~2.0.10",
+        "jquery": "~2.0.3",
+        "jquery-mobile" : null
+    }
+}
+

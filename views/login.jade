@@ -1,0 +1,40 @@
+!!! 5
+html
+  head
+    title Login Template
+    link(href='app/css/application.min.css', rel='stylesheet')
+    link(rel='shortcut icon', href='app/img/favicon.png')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(charset='utf-8')
+  body
+    .single-widget-container
+      section.widget.login-widget
+        header.text-align-center
+          h4 Login to your account
+        .body
+          form.no-margin(action='/login', method='post')
+            fieldset
+              .control-group.no-margin
+                label.control-label(for='email') Email
+                .control
+                  .input-prepend.input-padding-increased
+                    span.add-on
+                      i.eicon-user.icon-large
+                    input#email(type="text",name="username", placeholder='Your Email')
+              .control-group
+                label.control-label(for='password') Password
+                .control
+                  .input-prepend.input-padding-increased
+                    span.add-on
+                      i.icon-lock.icon-large
+                    input#password(type='password',name="password", placeholder='Your Password')
+            .form-actions
+              button.btn.btn-block.btn-large.btn-danger(type='submit')
+                span.small-circle
+                  i.icon-caret-right
+                small Sign In
+              .forgot
+                
+       

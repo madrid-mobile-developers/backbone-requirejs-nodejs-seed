@@ -1,0 +1,18 @@
+{
+  "name": "express-require-grunt-angular-seed",
+  "version": "0.0.1",
+  "description": "",
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bower-task": "~0.3.2",
+    "grunt-contrib":"~0.7.0",
+    "grunt-nodemon":"~0.1.1",
+    "grunt-shell":"latest"
+  },
+  "dependencies": {
+      "express": "~3.4.0"
+  }
+}
