@@ -10,24 +10,17 @@ requirejs.config({
     baseUrl: '/base/src/js',
 
     paths: {
-        'jquery': '../../lib/jquery',
-        'underscore': '../../lib/underscore',
-        'angular': '../../lib/angular/angular',
-        'angularRoute': '../../lib/angular-route/angular-route',
-        'angularMocks': '../../lib/angular-mocks/angular-mocks',
-        'text': '../../lib/requirejs-text/text'
+        'jquery': '../../lib/jquery/jquery',
+        'underscore': '../../lib/underscore-amd/underscore-min',
+        'text': '../../lib/requirejs-text/text',
+        'Backbone' : '../../lib/backbone-amd/backbone-min'
     },
 
     shim: {
         'underscore': {
             exports: '_'
-        },
-        'angular' : {'exports' : 'angular'},
-        'angularRoute': ['angular'],
-        'angularMocks': {
-            deps:['angular'],
-            'exports':'angular.mock'
         }
+
     },
 
     // ask Require.js to load these files (all our tests)

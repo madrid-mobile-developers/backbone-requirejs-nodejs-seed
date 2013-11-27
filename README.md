@@ -14,6 +14,10 @@ This is a fork of [angular-requireJS Seed](https://github.com/madrid-mobile-deve
 
 ## Installation
 
+    Install Node.js
+
+    npm install -g bower
+
     git clone git@github.com:madrid-mobile-developers/backbone-requirejs-nodejs-seed.git
 
     cd backbone-requirejs-seed
@@ -35,9 +39,6 @@ This is a fork of [angular-requireJS Seed](https://github.com/madrid-mobile-deve
     cd backbone-requirejs-seed
     grunt karma
 
-    # Run end to end tests (requires web server to be running)
-    cd backbone-requirejs-seed
-    grunt karma:e2e
 
 ## Develop
 

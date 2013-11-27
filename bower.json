@@ -6,8 +6,7 @@
         "underscore-amd": "~1.5.2",
         "requirejs": "~2.1.8",
         "requirejs-text": "~2.0.10",
-        "jquery": "~2.0.3",
-        "jquery-mobile" : null
+        "jquery": "~2.0.3"
     }
 }
 

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      main: {
+      lib: {
         expand: true,
         cwd: 'lib/',
         src: '**',
@@ -36,13 +36,30 @@ module.exports = function(grunt) {
             },
           command: 'supervisor server.js'
         }
+      },
+      karma: {
+          unit: {
+              configFile: './karma.conf.js'
+          }
+      },
+      clean: {
+          sources: {
+              src: ['public/app/**'],
+              force: true
+          },
+          lib: {
+              src: ['public/lib/**'],
+              force: true
+          }
       }
   });
 
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-karma');
 
-  grunt.registerTask('default', ['bower','copy:main','copy:sources','shell:node_start']);
+  grunt.registerTask('default', ['bower','copy:lib','copy:sources']);
+  grunt.registerTask('dev_deploy', ['karma:unit', 'clean:lib', 'copy:lib', 'clean:sources', 'copy:sources']);
 
 };

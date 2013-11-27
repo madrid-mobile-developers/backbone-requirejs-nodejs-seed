@@ -7,7 +7,7 @@ define('views/ViewOne',
         'underscore',
         'Backbone',
         'models/ModelOne',
-        'text!/app/partials/partial1.html'
+        'text!../../partials/partial1.html'
     ],
     function(_, Backbone, ModelOne, tpl){
         var View = Backbone.View.extend({

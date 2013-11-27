@@ -7,7 +7,7 @@ define('views/ViewTwo',
         'underscore',
         'Backbone',
         'models/ModelTwo',
-        'text!/app/partials/partial2.html'
+        'text!../../partials/partial2.html'
     ],
     function(_, Backbone, ModelTwo, tpl){
         var View = Backbone.View.extend({

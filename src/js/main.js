@@ -27,7 +27,7 @@ require.config({
         }
     },
     paths: {
-        'jquery': '../../lib/jquery',
+        'jquery': '../../lib/jquery/jquery',
         'jquery-mobile': '../../lib/jquery-mobile.min',
         'underscore': '../../lib/underscore-amd/underscore-min',
         'Backbone': '../../lib/backbone-amd/backbone',
