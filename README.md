@@ -18,7 +18,7 @@ This is a fork of [angular-requireJS Seed](https://github.com/madrid-mobile-deve
 
     npm install -g bower
 
-    git clone git@github.com:madrid-mobile-developers/backbone-requirejs-nodejs-seed.git
+    git clone https://bitbucket.org/consultoriaarquitecturaapps/backbone-requirejs-nodejs-seed.git
 
     cd backbone-requirejs-seed
     npm install
