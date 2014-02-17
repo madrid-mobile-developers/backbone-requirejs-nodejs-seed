@@ -12,6 +12,7 @@
     "grunt-nodemon":"~0.1.1",
     "grunt-shell":"latest",
     "karma-coverage": "~0.1.2",
+    "karma-junit-reporter" : "0.2.1",
     "grunt-karma": "~0.6.2"
   },
   "dependencies": {
