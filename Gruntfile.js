@@ -27,11 +27,24 @@ module.exports = function(grunt) {
         src: '**',
         dest: 'public/app/',
         filter: 'isFile'
+      },
+      bundle:{
+        cwd: './public',
+        src:'**',
+        dest: '../bundle/www',
+        filter: 'isFile',
+        expand: true
       }
      } ,
       shell: {
         node_start: {
            options: {                    
+                stdout: true
+            },
+          command: 'supervisor server.js'
+        },
+        bundle_deploy:{
+          options: {                    
                 stdout: true
             },
           command: 'supervisor server.js'
@@ -61,5 +74,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['bower','copy:lib','copy:sources']);
   grunt.registerTask('dev_deploy', ['karma:unit', 'clean:lib', 'copy:lib', 'clean:sources', 'copy:sources']);
-
+  grunt.registerTask('deploy', ['karma:unit', 'clean:lib', 'copy:lib', 'clean:sources', 'copy:sources', 'copy:bundle']);
 };
