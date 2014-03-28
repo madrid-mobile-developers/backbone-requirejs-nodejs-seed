@@ -30,7 +30,7 @@ module.exports = function(config) {
 
         // test results reporter to use
         // possible values: 'dots', 'progress', 'junit'
-        reporters:['progress','coverage', 'junit'],
+        reporters:['progress','coverage'],
 
          preprocessors: {
             // source files, that you wanna generate coverage for
@@ -43,10 +43,7 @@ module.exports = function(config) {
           coverageReporter: {
             type : 'html',
             dir : 'test/coverage/'
-          },
-          junitReporter : {
-            outputFile: 'test/coverage/junit/test-karma.xml'
-          },
+          }
 
     // web server port
     port: 9876,
